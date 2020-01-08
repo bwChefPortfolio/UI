@@ -18,6 +18,45 @@
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.5s ease 0s;
 }
+.bottombtn {
+  -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  -webkit-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  box-shadow: inset -2px 3px 2px 1px #f5978e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(top, #B71707 5%, #992217 100%);
+  background: -webkit-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: -o-linear-gradient(top, #B71707 5%, #881f15 100%);
+  background: -ms-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: linear-gradient(to bottom, #B71707 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+  background-color: #B71707;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 11px 24px;
+  text-decoration: none;
+  text-shadow: -2px 2px 2px #810e05;
+}
+.bottombtn-cool {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+  background: -moz-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -webkit-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -o-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -ms-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: linear-gradient(to bottom, #c62d1f 5%, #B71707 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+  background-color: #B71707;
+}
+.bottombtn-act {
+  position: relative;
+  top: 1px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -152,6 +191,9 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  margin-left: 3%;
+}
 html,
 body {
   font-family: 'Stoke', serif;
@@ -172,14 +214,22 @@ p {
 }
 nav {
   background: #ffcdab;
+  width: 96.95%;
 }
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.5% 0.5% 0.5% 0.5%;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 nav a {
   text-decoration: none;
@@ -202,7 +252,16 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 95%%;
+  width: 95%;
+}
+@media (max-width: 1000px) {
+  header {
+    background-image: url(../img/cuttingboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 95%;
+  }
 }
 .marketing {
   display: flex;
@@ -250,38 +309,102 @@ hr {
 }
 .paradiv {
   display: flex;
+  flex-direction: column;
   align-content: center;
-  background-color: #ffcdab;
-  height: 30vh;
-  margin: 0 1% 0 1%;
+  background-color: #797172;
+  height: 60vh;
+  margin: 0 4% 0 1%;
 }
 .paradiv .product {
-  background-color: #fff;
+  background-color: #ffcdab;
   color: #393e46;
   width: 75%;
-  margin: 2% 1% 2% 1%;
+  margin: 1% 1% 1% 1%;
   padding: 1%;
   margin-left: 10%;
-  height: 5vh;
-}
-.paradiv .product p {
-  background-color: #fff;
   height: 10vh;
-}
-.socialmedia {
-  width: 40%;
-}
-.footer {
-  background-color: #ffcdab;
-  color: #393e46;
-  width: 100%;
-  margin: 0 1% 0 1%;
   text-align: center;
 }
-.footer p {
+.recipesbutton {
+  display: flex;
+  justify-content: center;
+  margin: 1% 0 2% 0;
+}
+.recipesbutton .recipebutton {
+  -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  -webkit-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  box-shadow: inset -2px 3px 2px 1px #f5978e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(top, #B71707 5%, #992217 100%);
+  background: -webkit-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: -o-linear-gradient(top, #B71707 5%, #881f15 100%);
+  background: -ms-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: linear-gradient(to bottom, #B71707 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+  background-color: #B71707;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 11px 24px;
+  text-decoration: none;
+  text-shadow: -2px 2px 2px #810e05;
+}
+.recipesbutton .recipebutton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+  background: -moz-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -webkit-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -o-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -ms-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: linear-gradient(to bottom, #c62d1f 5%, #B71707 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+  background-color: #B71707;
+}
+.recipesbutton .recipebutton:active {
+  position: relative;
+  top: 1px;
+}
+.recipes {
+  display: flex;
+  width: 80%;
+  height: 15vh;
+  justify-content: space-around;
+  margin-left: 7.5%;
+}
+.recipes .puddin {
+  height: 30vh;
+}
+.recipes .pancake {
+  height: 30vh;
+}
+.recipes .dessert {
+  height: 30vh;
+}
+.recipes .sammich {
+  height: 30vh;
+}
+footer {
   background-color: #ffcdab;
   color: #393e46;
-  width: 100%;
+  width: 95%;
   margin: 0 1% 0 1%;
   text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5vh;
+  padding-top: 0.5%;
+}
+footer .socialmedia {
+  width: 90%;
+}
+footer p {
+  background-color: #ffcdab;
+  color: #393e46;
+  width: 95%;
+  text-align: right;
 }

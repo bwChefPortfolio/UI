@@ -6,7 +6,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 95%%;
+  width: 95%;
+
+  @media @tablet {
+    background-image: url(../img/cuttingboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 95%;
+  }
 }
 
 .marketing {
@@ -24,6 +32,8 @@ header {
       font-size: 15rem;
       color: @ivory;
       margin-left: 10%;
+
+      
     } //This ends h1
 
     .getstarted {
@@ -48,47 +58,86 @@ hr {
 
 .paradiv {
   display: flex;
+  flex-direction: column;
   align-content: center;
-  background-color: @salmon;
-  height: 30vh;
-  margin: 0 1% 0 1%;
+  background-color: #797172;
+  height: 60vh;
+  margin: 0 4% 0 1%;
 
   .product {
-    background-color: @white;
-      color: @matblack;
-      width: 75%;
-      margin: 2% 1% 2% 1%;
-      padding: 1%;
-      margin-left: 10%;
-      height: 5vh;
-
-    p {
-      background-color: @white;
-      // color: @matblack;
-      // width: 75%;
-      // margin: 0 1% 0 1%;
-      // padding: 1%;
-      // margin-left: 10%;
-      height: 10vh;
-    }
+    background-color: @salmon;
+    color: @matblack;
+    width: 75%;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    margin-left: 10%;
+    height: 10vh;
+    text-align: center;
   }
 }
-.socialmedia {
-  width: 40%;
+
+.recipesbutton {
+  display: flex;
+  justify-content: center;
+  margin: 1% 0 2% 0;
+  .recipebutton {
+    .bottombtn;
+  }
+  .recipebutton:hover {
+    .bottombtn-cool;
+  }
+  .recipebutton:active {
+    .bottombtn-act;
+  }
+}
+.recipes {
+  display: flex;
+  width: 80%;
+  height: 15vh;
+  justify-content: space-around;
+  margin-left: 7.5%;
+
+  // .food {
+  //   width: 15%;
+  //   // margin: auto 1.25%;
+  // }
+
+  .puddin {
+    height: 30vh;
+  }
+
+  .pancake {
+    height: 30vh;
+  }
+
+  .dessert {
+    height: 30vh;
+  }
+
+  .sammich {
+    height: 30vh;
+  }
 }
 
-.footer {
+footer {
   background-color: @salmon;
   color: @matblack;
-  width: 100%;
+  width: 95%;
   margin: 0 1% 0 1%;
   text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5vh;
+  padding-top: 0.5%;
 
-  p{
+  .socialmedia {
+    width: 90%;
+  }
+
+  p {
     background-color: @salmon;
-  color: @matblack;
-  width: 100%;
-  margin: 0 1% 0 1%;
-  text-align: center;
+    color: @matblack;
+    width: 95%;
+    text-align: right;
   }
 }
