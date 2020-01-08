@@ -1,3 +1,24 @@
+.cool-btn {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #b71707;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  width: 15%;
+  font-size: 2rem;
+  text-align: center;
+}
+.cool-button {
+  background-color: #393e46;
+  text-shadow: 0px 0px 6px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,13 +192,52 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #393e46;
+}
+nav a:hover {
+  transition: 0.5s ease;
+  color: #B71707;
 }
 nav .logo {
   align-content: center;
 }
-.mainimg {
+header {
+  background-image: url(../img/cuttingboard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
+}
+.marketing {
+  display: flex;
+  flex-direction: column;
+}
+.marketing h1 {
+  font-size: 15rem;
+  color: #faf6ed;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+.mybutton {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #b71707;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  width: 15%;
+  font-size: 2rem;
+  text-align: center;
+}
+.mybutton:hover {
+  background-color: #393e46;
+  text-shadow: 0px 0px 6px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
