@@ -191,4 +191,16 @@ body {
   display: flex;
   justify-content: center;
   color: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.ourPix {
+  display: flex;
+  margin-right: 6%;
+  margin-left: 6%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.indiv {
+  margin: 2%;
 }
