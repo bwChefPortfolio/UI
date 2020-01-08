@@ -5,19 +5,18 @@
   background: #b71707;
   padding: 20px;
   border-radius: 50px;
-  display: inline-block;
   border: none;
   transition: all 0.4s ease 0s;
-  width: 15%;
+  width: 40%;
   font-size: 2rem;
   text-align: center;
 }
 .cool-button {
   background-color: #393e46;
-  text-shadow: 0px 0px 6px #ffffff;
+  text-shadow: 0px 0px 6px #fff;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -198,7 +197,7 @@ nav a {
 }
 nav a:hover {
   transition: 0.5s ease;
-  color: #B71707;
+  color: #b71707;
 }
 nav .logo {
   align-content: center;
@@ -213,31 +212,52 @@ header {
 .marketing {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.marketing h1 {
+.marketing .callToAction {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+.marketing .callToAction h1 {
   font-size: 15rem;
   color: #faf6ed;
-  margin-left: 15%;
-  margin-top: 15%;
+  margin-left: 10%;
 }
-.mybutton {
+.marketing .callToAction .getstarted {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.marketing .callToAction .getstarted .mybutton {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   background: #b71707;
   padding: 20px;
   border-radius: 50px;
-  display: inline-block;
   border: none;
   transition: all 0.4s ease 0s;
-  width: 15%;
+  width: 40%;
   font-size: 2rem;
   text-align: center;
 }
-.mybutton:hover {
+.marketing .callToAction .getstarted .mybutton:hover {
   background-color: #393e46;
-  text-shadow: 0px 0px 6px #ffffff;
+  text-shadow: 0px 0px 6px #fff;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+hr {
+  border: 5px solid #fff;
+}
+.product {
+  background-color: #ffcdab;
+  padding: 2% 2%;
+  height: 10vh;
+}
+.product p {
+  background-color: #393e46;
+  color: #faf6ed;
 }

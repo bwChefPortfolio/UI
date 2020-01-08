@@ -10,21 +10,52 @@ header{
 .marketing{
   display: flex;
   flex-direction: column;
-
-  h1{
-    font-size: 15rem;
-    color: #faf6ed;
-    margin-left: 15%;
-    margin-top: 15%;
-  }
-
-}
-
-.mybutton{
-  .cool-btn
+  justify-content: center;
   
+  
+
+  .callToAction{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+
+    h1{
+      font-size: 15rem;
+      color: @ivory;
+      margin-left: 10%;
+      
+    }//This ends h1
+
+.getstarted{
+display: flex;
+justify-content: space-around;
+width: 50%;
+
+
+    .mybutton{
+      .cool-btn
+    
+    }
+    
+    .mybutton:hover{
+      .cool-button
+    }//This ends buttons
+  }//This ends getstarted
+}//This ends CallToAction
+}//This ends Marketing
+
+hr{
+  border: 5px solid @white;
 }
 
-.mybutton:hover{
-  .cool-button
+.product{
+  background-color: @salmon;
+  padding: 2% 2%;
+  height: 10vh;
+
+  p{
+background-color: @matblack;
+color: @ivory;
+  }
+  
 }
