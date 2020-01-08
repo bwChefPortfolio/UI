@@ -153,11 +153,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 nav {
   background: #ffcdab;
 }
@@ -188,4 +183,12 @@ nav .logo {
   padding: 0;
   max-width: 100%;
   border: 1px solid greenyellow;
+}
+body {
+  background-color: #393e46;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
