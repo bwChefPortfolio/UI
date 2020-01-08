@@ -1,61 +1,94 @@
-
-header{
+.maincontent {
+  margin: 0 1% 0 1%;
+}
+header {
   background-image: url(../img/cuttingboard.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 95%%;
 }
 
-.marketing{
+.marketing {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  
+  margin: 0 1% 0 1%;
 
-  .callToAction{
+  .callToAction {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
 
-    h1{
+    h1 {
       font-size: 15rem;
       color: @ivory;
       margin-left: 10%;
-      
-    }//This ends h1
+    } //This ends h1
 
-.getstarted{
-display: flex;
-justify-content: space-around;
-width: 50%;
+    .getstarted {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
 
+      .mybutton {
+        .cool-btn;
+      }
 
-    .mybutton{
-      .cool-btn
-    
-    }
-    
-    .mybutton:hover{
-      .cool-button
-    }//This ends buttons
-  }//This ends getstarted
-}//This ends CallToAction
-}//This ends Marketing
+      .mybutton:hover {
+        .cool-button;
+      } //This ends buttons
+    } //This ends getstarted
+  } //This ends CallToAction
+} //This ends Marketing
 
-hr{
+hr {
   border: 5px solid @white;
 }
 
-.product{
+.paradiv {
+  display: flex;
+  align-content: center;
   background-color: @salmon;
-  padding: 2% 2%;
-  height: 10vh;
+  height: 30vh;
+  margin: 0 1% 0 1%;
+
+  .product {
+    background-color: @white;
+      color: @matblack;
+      width: 75%;
+      margin: 2% 1% 2% 1%;
+      padding: 1%;
+      margin-left: 10%;
+      height: 5vh;
+
+    p {
+      background-color: @white;
+      // color: @matblack;
+      // width: 75%;
+      // margin: 0 1% 0 1%;
+      // padding: 1%;
+      // margin-left: 10%;
+      height: 10vh;
+    }
+  }
+}
+.socialmedia {
+  width: 40%;
+}
+
+.footer {
+  background-color: @salmon;
+  color: @matblack;
+  width: 100%;
+  margin: 0 1% 0 1%;
+  text-align: center;
 
   p{
-background-color: @matblack;
-color: @ivory;
+    background-color: @salmon;
+  color: @matblack;
+  width: 100%;
+  margin: 0 1% 0 1%;
+  text-align: center;
   }
-  
 }

@@ -166,17 +166,9 @@ h5 {
 h1 {
   font-size: 5.2rem;
 }
-h3 {
-  font-size: 2.8rem;
-}
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  line-height: 1.5;
 }
 nav {
   background: #ffcdab;
@@ -202,17 +194,21 @@ nav a:hover {
 nav .logo {
   align-content: center;
 }
+.maincontent {
+  margin: 0 1% 0 1%;
+}
 header {
   background-image: url(../img/cuttingboard.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 95%%;
 }
 .marketing {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 1% 0 1%;
 }
 .marketing .callToAction {
   display: flex;
@@ -252,12 +248,40 @@ header {
 hr {
   border: 5px solid #fff;
 }
-.product {
+.paradiv {
+  display: flex;
+  align-content: center;
   background-color: #ffcdab;
-  padding: 2% 2%;
+  height: 30vh;
+  margin: 0 1% 0 1%;
+}
+.paradiv .product {
+  background-color: #fff;
+  color: #393e46;
+  width: 75%;
+  margin: 2% 1% 2% 1%;
+  padding: 1%;
+  margin-left: 10%;
+  height: 5vh;
+}
+.paradiv .product p {
+  background-color: #fff;
   height: 10vh;
 }
-.product p {
-  background-color: #393e46;
-  color: #faf6ed;
+.socialmedia {
+  width: 40%;
+}
+.footer {
+  background-color: #ffcdab;
+  color: #393e46;
+  width: 100%;
+  margin: 0 1% 0 1%;
+  text-align: center;
+}
+.footer p {
+  background-color: #ffcdab;
+  color: #393e46;
+  width: 100%;
+  margin: 0 1% 0 1%;
+  text-align: center;
 }
