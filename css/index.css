@@ -53,10 +53,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
   background-color: #B71707;
 }
-.bottombtn-act {
-  position: relative;
-  top: 1px;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -192,7 +188,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin-left: 3%;
+  margin: 0 1% 0 1%;
 }
 html,
 body {
@@ -214,17 +210,17 @@ p {
 }
 nav {
   background: #ffcdab;
-  width: 96.95%;
+  width: 100%;
 }
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.5% 0.5% 0.5% 0.5%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -244,30 +240,29 @@ nav a:hover {
 nav .logo {
   align-content: center;
 }
-.maincontent {
-  margin: 0 1% 0 1%;
-}
 header {
-  background-image: url(../img/cuttingboard.png);
+  background-image: url(../img/cuttingboard1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 95%;
+  width: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   header {
-    background-image: url(../img/cuttingboard.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 95%;
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+  }
+}
+@media (max-width:500px) {
+  header {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
   }
 }
 .marketing {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1% 0 1%;
 }
 .marketing .callToAction {
   display: flex;
@@ -277,7 +272,13 @@ header {
 .marketing .callToAction h1 {
   font-size: 15rem;
   color: #faf6ed;
-  margin-left: 10%;
+}
+@media (max-width: 800px) {
+  .marketing .callToAction h1 {
+    position: relative;
+    bottom: 40%;
+    right: 20%;
+  }
 }
 .marketing .callToAction .getstarted {
   display: flex;
@@ -311,9 +312,9 @@ hr {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: #797172;
+  background-color: #BBA89B;
   height: 60vh;
-  margin: 0 4% 0 1%;
+  margin: 1% 0 0 0;
 }
 .paradiv .product {
   background-color: #ffcdab;
@@ -328,7 +329,7 @@ hr {
 .recipesbutton {
   display: flex;
   justify-content: center;
-  margin: 1% 0 2% 0;
+  margin: 1% 0 1% 0;
 }
 .recipesbutton .recipebutton {
   -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
@@ -365,10 +366,6 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
   background-color: #B71707;
 }
-.recipesbutton .recipebutton:active {
-  position: relative;
-  top: 1px;
-}
 .recipes {
   display: flex;
   width: 80%;
@@ -391,8 +388,7 @@ hr {
 footer {
   background-color: #ffcdab;
   color: #393e46;
-  width: 95%;
-  margin: 0 1% 0 1%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
