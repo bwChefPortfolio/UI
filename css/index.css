@@ -196,7 +196,6 @@ footer {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  border: 1px solid greenyellow !important;
 }
 body {
   background-color: #faf6ed;
@@ -230,4 +229,7 @@ body {
 .indiv p {
   color: #b71707;
   background-color: #ffcdab;
+}
+#ari {
+  font-size: 1.4rem;
 }
