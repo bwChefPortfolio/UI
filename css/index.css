@@ -203,16 +203,18 @@ h5 {
 }
 h1 {
   font-size: 5.2rem;
+  font-family: 'Montserrat', sans-serif;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 nav {
-  background: #ffcdab;
   width: 100%;
 }
 nav ul {
+  background: #ffcdab;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -222,9 +224,32 @@ nav ul {
 }
 @media (max-width: 800px) {
   nav ul {
+    background: none;
+  }
+}
+@media (max-width:500px) {
+  nav ul {
+    background: none;
+  }
+}
+@media (max-width: 800px) {
+  nav li {
+    background: #ffcdab;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 1%;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) and (max-width:500px) {
+  nav li {
+    background: #ffcdab;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1%;
+    align-items: center;
   }
 }
 nav a {
@@ -233,12 +258,51 @@ nav a {
   font-weight: bold;
   color: #393e46;
 }
+@media (max-width: 800px) {
+  nav a {
+    padding: 0 5% 0 2%;
+  }
+}
 nav a:hover {
   transition: 0.5s ease;
   color: #b71707;
 }
 nav .logo {
   align-content: center;
+}
+@media (max-width: 800px) {
+  nav .logo {
+    position: relative;
+    left: 40%;
+    margin-top: 1.5%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #ffcdab;
+}
+footer .copyright {
+  width: 80%;
+  padding: 3%;
+}
+footer .socialmedia {
+  width: 20%;
+  padding: 3%;
+}
+footer .socialmedia a img {
+  width: 15%;
+  padding: 1%;
+}
+@media (max-width: 800px) {
+  footer .socialmedia a img {
+    width: 22%;
+  }
+}
+@media (max-width:500px) {
+  footer .socialmedia a img {
+    width: 22%;
+  }
 }
 header {
   background-image: url(../img/cuttingboard1.png);
@@ -276,14 +340,39 @@ header {
 @media (max-width: 800px) {
   .marketing .callToAction h1 {
     position: relative;
-    bottom: 40%;
-    right: 20%;
+    bottom: 50%;
+    right: 2%;
+    font-size: 15rem;
+  }
+}
+@media (max-width:500px) {
+  .marketing .callToAction h1 {
+    position: relative;
+    bottom: 100%;
+    left: 2%;
+    font-size: 7.5rem;
   }
 }
 .marketing .callToAction .getstarted {
   display: flex;
   justify-content: space-around;
   width: 50%;
+}
+@media (max-width: 800px) {
+  .marketing .callToAction .getstarted {
+    width: 100%;
+    position: relative;
+    bottom: 40%;
+    right: 10%;
+  }
+}
+@media (max-width:500px) {
+  .marketing .callToAction .getstarted {
+    width: 115%;
+    position: relative;
+    right: 15%;
+    bottom: 90%;
+  }
 }
 .marketing .callToAction .getstarted .mybutton {
   color: #fff;
@@ -305,16 +394,29 @@ header {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.5s ease 0s;
 }
-hr {
-  border: 5px solid #fff;
-}
 .paradiv {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: #BBA89B;
+  background-color: #bba89b;
   height: 60vh;
-  margin: 1% 0 0 0;
+}
+@media (max-width: 800px) {
+  .paradiv {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+}
+@media (max-width:500px) {
+  .paradiv {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .paradiv .product {
   background-color: #ffcdab;
@@ -325,6 +427,47 @@ hr {
   margin-left: 10%;
   height: 10vh;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .paradiv .product {
+    position: relative;
+    bottom: 60%;
+    height: 12vh;
+  }
+}
+@media (max-width:500px) {
+  .paradiv .product {
+    height: 20vh;
+    position: relative;
+    bottom: 100%;
+    left: 2.5%;
+  }
+}
+@media (max-width: 800px) {
+  .paradiv .product p {
+    font-size: 1.5rem;
+    position: relative;
+  }
+}
+@media (max-width: 800px) {
+  .mobile {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }
+}
+@media (max-width:500px) {
+  .mobile {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }
 }
 .recipesbutton {
   display: flex;
@@ -366,6 +509,19 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
   background-color: #B71707;
 }
+@media (max-width: 800px) {
+  .recipesbutton {
+    position: relative;
+    top: 160%;
+    right: 2%;
+  }
+}
+@media (max-width:500px) {
+  .recipesbutton {
+    position: relative;
+    top: 120%;
+  }
+}
 .recipes {
   display: flex;
   width: 80%;
@@ -373,34 +529,93 @@ hr {
   justify-content: space-around;
   margin-left: 7.5%;
 }
+@media (max-width: 800px) {
+  .recipes {
+    flex-direction: column;
+    height: 30vh;
+    width: 30%;
+    justify-content: space-around;
+    margin-left: 7.5%;
+    position: relative;
+    left: 25%;
+    top: 15%;
+  }
+}
+@media (max-width:500px) {
+  .recipes {
+    flex-direction: column;
+    height: 40vh;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 1%;
+    position: relative;
+    left: 23%;
+    top: -30%;
+  }
+}
 .recipes .puddin {
   height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .puddin {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .puddin {
+    margin-bottom: 10%;
+  }
 }
 .recipes .pancake {
   height: 30vh;
 }
+@media (max-width: 800px) {
+  .recipes .pancake {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .pancake {
+    margin-bottom: 10%;
+  }
+}
 .recipes .dessert {
   height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .dessert {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .dessert {
+    margin-bottom: 10%;
+  }
 }
 .recipes .sammich {
   height: 30vh;
 }
-footer {
-  background-color: #ffcdab;
-  color: #393e46;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 5vh;
-  padding-top: 0.5%;
+@media (max-width: 800px) {
+  .recipes .sammich {
+    margin-bottom: 10%;
+  }
 }
-footer .socialmedia {
-  width: 90%;
+@media (max-width:500px) {
+  .recipes .sammich {
+    margin-bottom: 10%;
+  }
 }
-footer p {
-  background-color: #ffcdab;
-  color: #393e46;
-  width: 95%;
-  text-align: right;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
