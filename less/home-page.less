@@ -1,24 +1,21 @@
-
 header {
   background-image: url(../img/cuttingboard1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
+ 
   // max-width: 100% !important;
   // min-width: 100vw;
-  @media @tablet{
-    background-image: url(../img/cuttingboard2.png)!important;
+  @media @tablet {
+    background-image: url(../img/cuttingboard2.png) !important;
     background-attachment: fixed;
   }
-  @media @phone{
-    background-image: url(../img/cuttingboard2.png)!important;
-  background-attachment: fixed;
+  @media @phone {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
   }
 }
-  
-
-
 
 .marketing {
   display: flex;
@@ -36,9 +33,16 @@ header {
       color: @ivory;
       // margin-left: 0;
       @media @tablet {
-      position: relative;
-      bottom: 40%;
-      right: 20%;
+        position: relative;
+        bottom: 50%;
+        right: 2%;
+        font-size: 15rem;
+        @media @phone {
+          position: relative;
+          bottom: 100%;
+          left: 2%;
+          font-size: 10rem;
+        }
       }
     } //This ends h1
 
@@ -46,6 +50,20 @@ header {
       display: flex;
       justify-content: space-around;
       width: 50%;
+
+      @media @tablet {
+        width: 100%;
+        position: relative;
+        bottom: 40%;
+        right: 10%;
+      }
+
+      @media @phone {
+        width: 115%;
+        position: relative;
+        right: 15%;
+        bottom: 90%;
+      }
 
       .mybutton {
         .cool-btn;
@@ -58,17 +76,27 @@ header {
   } //This ends CallToAction
 } //This ends Marketing
 
-hr {
-  border: 5px solid @white;
-}
-
 .paradiv {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: #BBA89B;
+  background-color: #bba89b;
   height: 60vh;
   margin: 1% 0 0 0;
+  @media @tablet {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    @media @phone{
+      background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    }
+  }
 
   .product {
     background-color: @salmon;
@@ -79,6 +107,44 @@ hr {
     margin-left: 10%;
     height: 10vh;
     text-align: center;
+
+    @media @tablet {
+      position: relative;
+      bottom: 60%;
+      height: 12vh;
+    }
+    @media @phone{
+      height: 17vh;
+      position: relative;
+      bottom: 100%;
+      left: 2.5%;
+    }
+    p {
+      @media @tablet {
+        font-size: 1.5rem;
+        position: relative;
+       
+      }
+    }
+  }
+}
+
+.mobile{
+  @media @tablet{
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }
+  @media @phone{
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
   }
 }
 
@@ -92,7 +158,17 @@ hr {
   .recipebutton:hover {
     .bottombtn-cool;
   }
-  
+  @media @tablet {
+    position: relative;
+    top: 160%;
+    right: 2%;
+  }
+  @media @phone{
+    position: relative;
+    top: 120%;
+    // right: 2%;
+    // left: 2%;
+  }
 }
 .recipes {
   display: flex;
@@ -100,48 +176,64 @@ hr {
   height: 15vh;
   justify-content: space-around;
   margin-left: 7.5%;
-
-  // .food {
-  //   width: 15%;
-  //   // margin: auto 1.25%;
-  // }
+  @media @tablet {
+    flex-direction: column;
+    height: 30vh;
+    width: 30%;
+    justify-content: space-around;
+    margin-left: 7.5%;
+    position: relative;
+    left: 25%;
+    top: 15%;
+  }
+  @media @phone {
+    flex-direction: column;
+    height: 40vh;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 1%;
+    position: relative;
+    left: 23%;
+    top: -30%;
+  }
 
   .puddin {
     height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }
+    @media @phone {
+      margin-bottom: 10%;
+    }
   }
 
   .pancake {
     height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }
+    @media @phone {
+      margin-bottom: 10%;
+    }
   }
 
   .dessert {
     height: 30vh;
+    @media @tablet{
+      margin-bottom: 10%;
+    }
+    @media @phone{
+      margin-bottom: 10%;
+    }
   }
 
   .sammich {
     height: 30vh;
-  }
-}
-
-footer {
-  background-color: @salmon;
-  color: @matblack;
-  width: 100%;
-  // margin: 0 1% 0 1%;
-  text-align: center;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 5vh;
-  padding-top: 0.5%;
-
-  .socialmedia {
-    width: 90%;
-  }
-
-  p {
-    background-color: @salmon;
-    color: @matblack;
-    width: 95%;
-    text-align: right;
+    @media @tablet {
+      margin-bottom: 10%;
+    }
+    @media @phone {
+      margin-bottom: 10%;
+    }
   }
 }
