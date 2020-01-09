@@ -1,0 +1,147 @@
+
+header {
+  background-image: url(../img/cuttingboard1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  // max-width: 100% !important;
+  // min-width: 100vw;
+  @media @tablet{
+    background-image: url(../img/cuttingboard2.png)!important;
+    background-attachment: fixed;
+  }
+  @media @phone{
+    background-image: url(../img/cuttingboard2.png)!important;
+  background-attachment: fixed;
+  }
+}
+  
+
+
+
+.marketing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin: 0 1% 0 1%;
+
+  .callToAction {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+
+    h1 {
+      font-size: 15rem;
+      color: @ivory;
+      // margin-left: 0;
+      @media @tablet {
+      position: relative;
+      bottom: 40%;
+      right: 20%;
+      }
+    } //This ends h1
+
+    .getstarted {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+
+      .mybutton {
+        .cool-btn;
+      }
+
+      .mybutton:hover {
+        .cool-button;
+      } //This ends buttons
+    } //This ends getstarted
+  } //This ends CallToAction
+} //This ends Marketing
+
+hr {
+  border: 5px solid @white;
+}
+
+.paradiv {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #BBA89B;
+  height: 60vh;
+  margin: 1% 0 0 0;
+
+  .product {
+    background-color: @salmon;
+    color: @matblack;
+    width: 75%;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    margin-left: 10%;
+    height: 10vh;
+    text-align: center;
+  }
+}
+
+.recipesbutton {
+  display: flex;
+  justify-content: center;
+  margin: 1% 0 1% 0;
+  .recipebutton {
+    .bottombtn;
+  }
+  .recipebutton:hover {
+    .bottombtn-cool;
+  }
+  
+}
+.recipes {
+  display: flex;
+  width: 80%;
+  height: 15vh;
+  justify-content: space-around;
+  margin-left: 7.5%;
+
+  // .food {
+  //   width: 15%;
+  //   // margin: auto 1.25%;
+  // }
+
+  .puddin {
+    height: 30vh;
+  }
+
+  .pancake {
+    height: 30vh;
+  }
+
+  .dessert {
+    height: 30vh;
+  }
+
+  .sammich {
+    height: 30vh;
+  }
+}
+
+footer {
+  background-color: @salmon;
+  color: @matblack;
+  width: 100%;
+  // margin: 0 1% 0 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5vh;
+  padding-top: 0.5%;
+
+  .socialmedia {
+    width: 90%;
+  }
+
+  p {
+    background-color: @salmon;
+    color: @matblack;
+    width: 95%;
+    text-align: right;
+  }
+}
