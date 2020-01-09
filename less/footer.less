@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  align-items: center;
+  background-color: @salmon;
+
+  .copyright {
+    width: 80%;
+    padding: 3%;
+  }//This closes copyright tag
+  .socialmedia {
+    width: 20%;
+    padding: 3%;
+
+    a {
+      img {
+        width: 15%;
+        padding: 1%;
+
+        @media @tablet{
+          width:22%;
+        }//This closes tablet media query
+
+        @media @phone{
+          width: 22%;
+        }//This closts phone media query
+      }//This closes img tags
+    }//This closes anchor tags
+  }//This closes social media
+}//This closes the footer

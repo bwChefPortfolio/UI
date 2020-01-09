@@ -18,6 +18,41 @@
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.5s ease 0s;
 }
+.bottombtn {
+  -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  -webkit-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  box-shadow: inset -2px 3px 2px 1px #f5978e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(top, #B71707 5%, #992217 100%);
+  background: -webkit-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: -o-linear-gradient(top, #B71707 5%, #881f15 100%);
+  background: -ms-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: linear-gradient(to bottom, #B71707 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+  background-color: #B71707;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 11px 24px;
+  text-decoration: none;
+  text-shadow: -2px 2px 2px #810e05;
+}
+.bottombtn-cool {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+  background: -moz-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -webkit-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -o-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -ms-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: linear-gradient(to bottom, #c62d1f 5%, #B71707 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+  background-color: #B71707;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -152,6 +187,9 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  margin: 0 1% 0 1%;
+}
 html,
 body {
   font-family: 'Stoke', serif;
@@ -165,15 +203,18 @@ h5 {
 }
 h1 {
   font-size: 5.2rem;
+  font-family: 'Montserrat', sans-serif;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 nav {
-  background: #ffcdab;
+  width: 100%;
 }
 nav ul {
+  background: #ffcdab;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -181,11 +222,46 @@ nav ul {
   align-items: center;
   padding: 0.5% 0.5% 0.5% 0.5%;
 }
+@media (max-width: 800px) {
+  nav ul {
+    background: none;
+  }
+}
+@media (max-width:500px) {
+  nav ul {
+    background: none;
+  }
+}
+@media (max-width: 800px) {
+  nav li {
+    background: #ffcdab;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1%;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) and (max-width:500px) {
+  nav li {
+    background: #ffcdab;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1%;
+    align-items: center;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   color: #393e46;
+}
+@media (max-width: 800px) {
+  nav a {
+    padding: 0 5% 0 2%;
+  }
 }
 nav a:hover {
   transition: 0.5s ease;
@@ -194,21 +270,63 @@ nav a:hover {
 nav .logo {
   align-content: center;
 }
-.maincontent {
-  margin: 0 1% 0 1%;
+@media (max-width: 800px) {
+  nav .logo {
+    position: relative;
+    left: 40%;
+    margin-top: 1.5%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #ffcdab;
+}
+footer .copyright {
+  width: 80%;
+  padding: 3%;
+}
+footer .socialmedia {
+  width: 20%;
+  padding: 3%;
+}
+footer .socialmedia a img {
+  width: 15%;
+  padding: 1%;
+}
+@media (max-width: 800px) {
+  footer .socialmedia a img {
+    width: 22%;
+  }
+}
+@media (max-width:500px) {
+  footer .socialmedia a img {
+    width: 22%;
+  }
 }
 header {
-  background-image: url(../img/cuttingboard.png);
+  background-image: url(../img/cuttingboard1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 95%%;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  header {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+  }
+}
+@media (max-width:500px) {
+  header {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+  }
 }
 .marketing {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1% 0 1%;
 }
 .marketing .callToAction {
   display: flex;
@@ -218,12 +336,43 @@ header {
 .marketing .callToAction h1 {
   font-size: 15rem;
   color: #faf6ed;
-  margin-left: 10%;
+}
+@media (max-width: 800px) {
+  .marketing .callToAction h1 {
+    position: relative;
+    bottom: 50%;
+    right: 2%;
+    font-size: 15rem;
+  }
+}
+@media (max-width:500px) {
+  .marketing .callToAction h1 {
+    position: relative;
+    bottom: 100%;
+    left: 2%;
+    font-size: 7.5rem;
+  }
 }
 .marketing .callToAction .getstarted {
   display: flex;
   justify-content: space-around;
   width: 50%;
+}
+@media (max-width: 800px) {
+  .marketing .callToAction .getstarted {
+    width: 100%;
+    position: relative;
+    bottom: 40%;
+    right: 10%;
+  }
+}
+@media (max-width:500px) {
+  .marketing .callToAction .getstarted {
+    width: 115%;
+    position: relative;
+    right: 15%;
+    bottom: 90%;
+  }
 }
 .marketing .callToAction .getstarted .mybutton {
   color: #fff;
@@ -245,43 +394,228 @@ header {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.5s ease 0s;
 }
-hr {
-  border: 5px solid #fff;
-}
 .paradiv {
   display: flex;
+  flex-direction: column;
   align-content: center;
-  background-color: #ffcdab;
-  height: 30vh;
-  margin: 0 1% 0 1%;
+  background-color: #bba89b;
+  height: 60vh;
+}
+@media (max-width: 800px) {
+  .paradiv {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+}
+@media (max-width:500px) {
+  .paradiv {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .paradiv .product {
-  background-color: #fff;
+  background-color: #ffcdab;
   color: #393e46;
   width: 75%;
-  margin: 2% 1% 2% 1%;
+  margin: 1% 1% 1% 1%;
   padding: 1%;
   margin-left: 10%;
-  height: 5vh;
-}
-.paradiv .product p {
-  background-color: #fff;
   height: 10vh;
-}
-.socialmedia {
-  width: 40%;
-}
-.footer {
-  background-color: #ffcdab;
-  color: #393e46;
-  width: 100%;
-  margin: 0 1% 0 1%;
   text-align: center;
 }
-.footer p {
-  background-color: #ffcdab;
-  color: #393e46;
-  width: 100%;
-  margin: 0 1% 0 1%;
-  text-align: center;
+@media (max-width: 800px) {
+  .paradiv .product {
+    position: relative;
+    bottom: 60%;
+    height: 12vh;
+  }
+}
+@media (max-width:500px) {
+  .paradiv .product {
+    height: 20vh;
+    position: relative;
+    bottom: 100%;
+    left: 2.5%;
+  }
+}
+@media (max-width: 800px) {
+  .paradiv .product p {
+    font-size: 1.5rem;
+    position: relative;
+  }
+}
+@media (max-width: 800px) {
+  .mobile {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }
+}
+@media (max-width:500px) {
+  .mobile {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }
+}
+.recipesbutton {
+  display: flex;
+  justify-content: center;
+  margin: 1% 0 1% 0;
+}
+.recipesbutton .recipebutton {
+  -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  -webkit-box-shadow: inset -2px 3px 2px 1px #f5978e;
+  box-shadow: inset -2px 3px 2px 1px #f5978e;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(top, #B71707 5%, #992217 100%);
+  background: -webkit-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: -o-linear-gradient(top, #B71707 5%, #881f15 100%);
+  background: -ms-linear-gradient(top, #B71707 5%, #c62d1f 100%);
+  background: linear-gradient(to bottom, #B71707 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+  background-color: #B71707;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 11px 24px;
+  text-decoration: none;
+  text-shadow: -2px 2px 2px #810e05;
+}
+.recipesbutton .recipebutton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+  background: -moz-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -webkit-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -o-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: -ms-linear-gradient(top, #c62d1f 5%, #B71707 100%);
+  background: linear-gradient(to bottom, #c62d1f 5%, #B71707 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+  background-color: #B71707;
+}
+@media (max-width: 800px) {
+  .recipesbutton {
+    position: relative;
+    top: 160%;
+    right: 2%;
+  }
+}
+@media (max-width:500px) {
+  .recipesbutton {
+    position: relative;
+    top: 120%;
+  }
+}
+.recipes {
+  display: flex;
+  width: 80%;
+  height: 15vh;
+  justify-content: space-around;
+  margin-left: 7.5%;
+}
+@media (max-width: 800px) {
+  .recipes {
+    flex-direction: column;
+    height: 30vh;
+    width: 30%;
+    justify-content: space-around;
+    margin-left: 7.5%;
+    position: relative;
+    left: 25%;
+    top: 15%;
+  }
+}
+@media (max-width:500px) {
+  .recipes {
+    flex-direction: column;
+    height: 40vh;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 1%;
+    position: relative;
+    left: 23%;
+    top: -30%;
+  }
+}
+.recipes .puddin {
+  height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .puddin {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .puddin {
+    margin-bottom: 10%;
+  }
+}
+.recipes .pancake {
+  height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .pancake {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .pancake {
+    margin-bottom: 10%;
+  }
+}
+.recipes .dessert {
+  height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .dessert {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .dessert {
+    margin-bottom: 10%;
+  }
+}
+.recipes .sammich {
+  height: 30vh;
+}
+@media (max-width: 800px) {
+  .recipes .sammich {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width:500px) {
+  .recipes .sammich {
+    margin-bottom: 10%;
+  }
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
