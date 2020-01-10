@@ -189,6 +189,9 @@ html {
 }
 body {
   margin: 0 1% 0 1%;
+  background: #faf6ed;
+  margin-right: 6%;
+  margin-left: 6%;
 }
 html,
 body {
@@ -220,7 +223,6 @@ nav ul {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0.5% 0.5% 0.5% 0.5%;
 }
 @media (max-width: 800px) {
   nav ul {
@@ -232,8 +234,39 @@ nav ul {
     background: none;
   }
 }
+nav ul .padding {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
 @media (max-width: 800px) {
-  nav li {
+  nav ul .padding {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul .padding li {
+    margin: 0.6% auto;
+    padding: 4.5%;
+  }
+}
+@media (max-width: 800px) and (max-width:500px) {
+  nav ul .padding .padding {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul .padding .padding li {
+    margin: 0.6% auto;
+    padding: 4.5%;
+  }
+}
+nav ul li {
+  padding: 0 5% 0 5%;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  nav ul li {
     background: #ffcdab;
     display: flex;
     flex-direction: column;
@@ -243,7 +276,7 @@ nav ul {
   }
 }
 @media (max-width: 800px) and (max-width:500px) {
-  nav li {
+  nav ul li {
     background: #ffcdab;
     display: flex;
     flex-direction: column;
@@ -252,28 +285,31 @@ nav ul {
     align-items: center;
   }
 }
-nav a {
+nav ul a {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   color: #393e46;
 }
 @media (max-width: 800px) {
-  nav a {
-    padding: 0 5% 0 2%;
+  nav ul a {
+    padding: 0 5% 0 5%;
   }
 }
-nav a:hover {
+nav ul a:hover {
   transition: 0.5s ease;
   color: #b71707;
 }
-nav .logo {
+nav ul .logo {
+  width: 10%;
+  display: flex;
+  justify-content: center;
   align-content: center;
 }
 @media (max-width: 800px) {
-  nav .logo {
+  nav ul .logo {
     position: relative;
-    left: 40%;
+    left: 37%;
     margin-top: 1.5%;
   }
 }
@@ -281,14 +317,15 @@ footer {
   display: flex;
   align-items: center;
   background-color: #ffcdab;
+  margin-right: 6%;
+  margin-left: 6%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
 }
 footer .copyright {
   width: 80%;
-  padding: 3%;
 }
 footer .socialmedia {
   width: 20%;
-  padding: 3%;
 }
 footer .socialmedia a img {
   width: 15%;
@@ -304,10 +341,16 @@ footer .socialmedia a img {
     width: 22%;
   }
 }
+.maincontent {
+  background: #faf6ed;
+  margin-left: 6%;
+  margin-right: 6%;
+}
 header {
   background-image: url(../img/cuttingboard1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -331,25 +374,28 @@ header {
 .marketing .callToAction {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
 }
 .marketing .callToAction h1 {
   font-size: 15rem;
   color: #faf6ed;
+  position: relative;
+  left: 20%;
+  bottom: 22%;
+  margin-right: 12%;
 }
 @media (max-width: 800px) {
   .marketing .callToAction h1 {
     position: relative;
-    bottom: 50%;
+    bottom: 95%;
     right: 2%;
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 @media (max-width:500px) {
   .marketing .callToAction h1 {
     position: relative;
-    bottom: 100%;
-    left: 2%;
+    bottom: 110%;
+    left: 10%;
     font-size: 7.5rem;
   }
 }
@@ -357,20 +403,24 @@ header {
   display: flex;
   justify-content: space-around;
   width: 50%;
+  position: relative;
+  left: 5%;
 }
 @media (max-width: 800px) {
   .marketing .callToAction .getstarted {
     width: 100%;
     position: relative;
-    bottom: 40%;
-    right: 10%;
+    bottom: 75%;
+    left: -10%;
   }
 }
 @media (max-width:500px) {
   .marketing .callToAction .getstarted {
-    width: 115%;
+    display: flex;
+    align-items: left;
+    width: 100%;
     position: relative;
-    right: 15%;
+    left: 2%;
     bottom: 90%;
   }
 }
@@ -387,6 +437,11 @@ header {
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width:500px) {
+  .marketing .callToAction .getstarted .mybutton {
+    font-size: 1.1rem;
+  }
+}
 .marketing .callToAction .getstarted .mybutton:hover {
   background-color: #393e46;
   text-shadow: 0px 0px 6px #fff;
@@ -397,9 +452,9 @@ header {
 .paradiv {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   background-color: #bba89b;
-  height: 60vh;
+  height: 90vh;
 }
 @media (max-width: 800px) {
   .paradiv {
@@ -419,31 +474,44 @@ header {
   }
 }
 .paradiv .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffcdab;
   color: #393e46;
-  width: 75%;
+  width: 45%;
   margin: 1% 1% 1% 1%;
   padding: 1%;
-  margin-left: 10%;
-  height: 10vh;
+  height: 30vh;
   text-align: center;
 }
 @media (max-width: 800px) {
   .paradiv .product {
     position: relative;
-    bottom: 60%;
-    height: 12vh;
+    bottom: 45%;
+    height: 20vh;
+    width: 65%;
   }
 }
 @media (max-width:500px) {
   .paradiv .product {
-    height: 20vh;
+    height: 25vh;
+    width: 85%;
     position: relative;
-    bottom: 100%;
+    bottom: 60%;
     left: 2.5%;
   }
 }
+.paradiv .product p {
+  font-size: 2rem;
+}
 @media (max-width: 800px) {
+  .paradiv .product p {
+    font-size: 1.5rem;
+    position: relative;
+  }
+}
+@media (max-width:500px) {
   .paradiv .product p {
     font-size: 1.5rem;
     position: relative;
@@ -472,7 +540,7 @@ header {
 .recipesbutton {
   display: flex;
   justify-content: center;
-  margin: 1% 0 1% 0;
+  margin: 6% 0 1% 0;
 }
 .recipesbutton .recipebutton {
   -moz-box-shadow: inset -2px 3px 2px 1px #f5978e;
@@ -512,32 +580,31 @@ header {
 @media (max-width: 800px) {
   .recipesbutton {
     position: relative;
-    top: 160%;
+    top: 130%;
     right: 2%;
   }
 }
 @media (max-width:500px) {
   .recipesbutton {
     position: relative;
-    top: 120%;
+    left: 1%;
   }
 }
 .recipes {
   display: flex;
   width: 80%;
-  height: 15vh;
-  justify-content: space-around;
-  margin-left: 7.5%;
+  height: 14vh;
+  justify-content: space-between;
+  align-content: center;
+  margin: 3% 0 0 0;
 }
 @media (max-width: 800px) {
   .recipes {
     flex-direction: column;
     height: 30vh;
-    width: 30%;
+    width: 50%;
     justify-content: space-around;
-    margin-left: 7.5%;
     position: relative;
-    left: 25%;
     top: 15%;
   }
 }
@@ -545,12 +612,11 @@ header {
   .recipes {
     flex-direction: column;
     height: 40vh;
-    width: 50%;
-    justify-content: space-around;
-    margin-left: 1%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     position: relative;
-    left: 23%;
-    top: -30%;
   }
 }
 .recipes .puddin {
@@ -603,6 +669,78 @@ header {
 @media (max-width:500px) {
   .recipes .sammich {
     margin-bottom: 10%;
+  }
+}
+.recipes .food1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food1 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food1 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food2 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food2 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food3 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food3 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food4 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food4 p {
+    position: relative;
+    bottom: 9.8%;
   }
 }
 @font-face {

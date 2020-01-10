@@ -1,12 +1,20 @@
+.maincontent{
+  background: @ivory;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
 header {
   background-image: url(../img/cuttingboard1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
+ 
 
-  // max-width: 100% !important;
-  // min-width: 100vw;
+  
+  
   @media @tablet {
     background-image: url(../img/cuttingboard2.png) !important;
     background-attachment: fixed;
@@ -26,22 +34,25 @@ header {
   .callToAction {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
+    // margin-left: 15%;
 
     h1 {
       font-size: 15rem;
       color: @ivory;
-      // margin-left: 0;
+      position: relative;
+      left: 20%;
+      bottom: 22%;
+      margin-right: 12%;
       @media @tablet {
         position: relative;
-        bottom: 50%;
+        bottom: 95%;
         right: 2%;
-        font-size: 15rem;
+        font-size: 10rem;
       }//This closes tablet media query
         @media @phone {
           position: relative;
-          bottom: 100%;
-          left: 2%;
+          bottom: 110%;
+          left: 10%;
           font-size: 7.5rem;
         }//This closes phone media query
       
@@ -51,23 +62,31 @@ header {
       display: flex;
       justify-content: space-around;
       width: 50%;
+      position: relative;
+      left: 5%;
 
       @media @tablet {
         width: 100%;
         position: relative;
-        bottom: 40%;
-        right: 10%;
+        bottom: 75%;
+        left: -10%;
       }//This closes tablet media query
 
       @media @phone {
-        width: 115%;
+        display:flex;
+        align-items: left;
+        width: 100%;
         position: relative;
-        right: 15%;
+        left: 2%;
         bottom: 90%;
       }//This closes phone media query
 
       .mybutton {
+        
         .cool-btn;
+        @media @phone{
+          font-size: 1.1rem;
+        }
       }//This closes butn variable
 
       .mybutton:hover {
@@ -80,9 +99,9 @@ header {
 .paradiv {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   background-color: #bba89b;
-  height: 60vh;
+  height: 90vh;
   @media @tablet {
     background-image: url(../img/cuttingboard2.png) !important;
     background-attachment: fixed;
@@ -98,28 +117,38 @@ header {
   }//This closes phone media query
 
   .product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: @salmon;
     color: @matblack;
-    width: 75%;
+    width: 45%;
     margin: 1% 1% 1% 1%;
     padding: 1%;
-    margin-left: 10%;
-    height: 10vh;
+    height: 30vh;
     text-align: center;
+    
 
     @media @tablet {
       position: relative;
-      bottom: 60%;
-      height: 12vh;
+      bottom: 45%;
+      height: 20vh;
+      width: 65%;
     }
     @media @phone {
-      height: 20vh;
+      height: 25vh;
+      width: 85%;
       position: relative;
-      bottom: 100%;
+      bottom: 60%;
       left: 2.5%;
     }
     p {
+      font-size: 2rem;
       @media @tablet {
+        font-size: 1.5rem;
+        position: relative;
+      }
+      @media @phone{
         font-size: 1.5rem;
         position: relative;
       }
@@ -149,7 +178,7 @@ header {
 .recipesbutton {
   display: flex;
   justify-content: center;
-  margin: 1% 0 1% 0;
+  margin: 6% 0 1% 0;
   .recipebutton {
     .bottombtn;
   }//This closes recipe btn
@@ -158,39 +187,40 @@ header {
   }//This closes recipe hover
   @media @tablet {
     position: relative;
-    top: 160%;
+    top: 130%;
     right: 2%;
   }//This closes tablet media query
   @media @phone {
     position: relative;
-    top: 120%;
+    // top: 75%;
+    left: 1%;
   }//This closes phone media query
 }//This closes recipe button
 .recipes {
   display: flex;
   width: 80%;
-  height: 15vh;
-  justify-content: space-around;
-  margin-left: 7.5%;
+  height: 14vh;
+  justify-content: space-between;
+  align-content: center;
+  margin: 3% 0 0 0;
   @media @tablet {
     flex-direction: column;
     height: 30vh;
-    width: 30%;
+    width: 50%;
     justify-content: space-around;
-    margin-left: 7.5%;
     position: relative;
-    left: 25%;
     top: 15%;
   }//This closes tablet media query
   @media @phone {
     flex-direction: column;
     height: 40vh;
-    width: 50%;
-    justify-content: space-around;
-    margin-left: 1%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // margin-left: 1%;
     position: relative;
-    left: 23%;
-    top: -30%;
+    // top: -5%;
   }//This closes phone media query
 
   .puddin {
@@ -232,4 +262,68 @@ header {
       margin-bottom: 10%;
     }//This closes phone media query
   }//This closes sammich tag
+  .food1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
 }//This closes recipe tag
