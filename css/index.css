@@ -587,17 +587,16 @@ header {
 @media (max-width:500px) {
   .recipesbutton {
     position: relative;
-    top: 110%;
     left: 1%;
   }
 }
 .recipes {
   display: flex;
   width: 80%;
-  height: 15vh;
-  justify-content: space-evenly;
+  height: 14vh;
+  justify-content: space-between;
   align-content: center;
-  margin: 5% 0 0 0;
+  margin: 3% 0 0 0;
 }
 @media (max-width: 800px) {
   .recipes {
@@ -618,8 +617,6 @@ header {
     align-items: center;
     align-content: center;
     position: relative;
-    left: -4%;
-    top: -10%;
   }
 }
 .recipes .puddin {
@@ -672,6 +669,78 @@ header {
 @media (max-width:500px) {
   .recipes .sammich {
     margin-bottom: 10%;
+  }
+}
+.recipes .food1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food1 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food1 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food2 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food2 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food3 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food3 p {
+    position: relative;
+    bottom: 9.8%;
+  }
+}
+.recipes .food4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .food4 p {
+  background: #b71707;
+  width: 100%;
+  color: #faf6ed;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .recipes .food4 p {
+    position: relative;
+    bottom: 9.8%;
   }
 }
 @font-face {
