@@ -32,10 +32,17 @@ body {
     flex-wrap: wrap;
     max-width: 90%;
 
+
     .indiv {
         margin: 3%;
         width: 22%;
         padding: 3%;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     .indiv p {
@@ -43,6 +50,7 @@ body {
         background-color: @salmon;
     }
 }
+
 
 // .indiv {
 //     margin: 3%;
@@ -58,3 +66,4 @@ body {
 #ari {
     font-size: 1.4rem;
 }
+
