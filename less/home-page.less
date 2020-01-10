@@ -1,0 +1,329 @@
+.maincontent{
+  background: @ivory;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+header {
+  background-image: url(../img/cuttingboard1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+ 
+
+  
+  
+  @media @tablet {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+  }//This closes tablet media query
+  @media @phone {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+  }//This closes phone media query
+}//This closes header
+
+.marketing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  .callToAction {
+    display: flex;
+    flex-direction: column;
+    // margin-left: 15%;
+
+    h1 {
+      font-size: 15rem;
+      color: @ivory;
+      position: relative;
+      left: 20%;
+      bottom: 22%;
+      margin-right: 12%;
+      @media @tablet {
+        position: relative;
+        bottom: 95%;
+        right: 2%;
+        font-size: 10rem;
+      }//This closes tablet media query
+        @media @phone {
+          position: relative;
+          bottom: 110%;
+          left: 10%;
+          font-size: 7.5rem;
+        }//This closes phone media query
+      
+    } //This ends h1
+
+    .getstarted {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      position: relative;
+      left: 5%;
+
+      @media @tablet {
+        width: 100%;
+        position: relative;
+        bottom: 75%;
+        left: -10%;
+      }//This closes tablet media query
+
+      @media @phone {
+        display:flex;
+        align-items: left;
+        width: 100%;
+        position: relative;
+        left: 2%;
+        bottom: 90%;
+      }//This closes phone media query
+
+      .mybutton {
+        
+        .cool-btn;
+        @media @phone{
+          font-size: 1.1rem;
+        }
+      }//This closes butn variable
+
+      .mybutton:hover {
+        .cool-button;
+      } //This ends buttons
+    } //This ends getstarted
+  } //This ends CallToAction
+} //This ends Marketing
+
+.paradiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bba89b;
+  height: 90vh;
+  @media @tablet {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }//This closes tablet mida query
+  @media @phone {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }//This closes phone media query
+
+  .product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @salmon;
+    color: @matblack;
+    width: 45%;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    height: 30vh;
+    text-align: center;
+    
+
+    @media @tablet {
+      position: relative;
+      bottom: 45%;
+      height: 20vh;
+      width: 65%;
+    }
+    @media @phone {
+      height: 25vh;
+      width: 85%;
+      position: relative;
+      bottom: 60%;
+      left: 2.5%;
+    }
+    p {
+      font-size: 2rem;
+      @media @tablet {
+        font-size: 1.5rem;
+        position: relative;
+      }
+      @media @phone{
+        font-size: 1.5rem;
+        position: relative;
+      }
+    } //This closes P tag
+  } //This closes product
+} //This closes paradiv
+
+.mobile {
+  @media @tablet {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }//This closes tablet media query
+  @media @phone {
+    background-image: url(../img/cuttingboard2.png) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 75vh;
+  }//This closes phone media query
+}//This closes mobile div
+
+.recipesbutton {
+  display: flex;
+  justify-content: center;
+  margin: 6% 0 1% 0;
+  .recipebutton {
+    .bottombtn;
+  }//This closes recipe btn
+  .recipebutton:hover {
+    .bottombtn-cool;
+  }//This closes recipe hover
+  @media @tablet {
+    position: relative;
+    top: 130%;
+    right: 2%;
+  }//This closes tablet media query
+  @media @phone {
+    position: relative;
+    // top: 75%;
+    left: 1%;
+  }//This closes phone media query
+}//This closes recipe button
+.recipes {
+  display: flex;
+  width: 80%;
+  height: 14vh;
+  justify-content: space-between;
+  align-content: center;
+  margin: 3% 0 0 0;
+  @media @tablet {
+    flex-direction: column;
+    height: 30vh;
+    width: 50%;
+    justify-content: space-around;
+    position: relative;
+    top: 15%;
+  }//This closes tablet media query
+  @media @phone {
+    flex-direction: column;
+    height: 40vh;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // margin-left: 1%;
+    position: relative;
+    // top: -5%;
+  }//This closes phone media query
+
+  .puddin {
+    height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }//This closes tablet media query
+    @media @phone {
+      margin-bottom: 10%;
+    }//This closes phone media query
+  }//This closes puddin tag
+
+  .pancake {
+    height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }//This closes tablet media query
+    @media @phone {
+      margin-bottom: 10%;
+    }//This closes phone media query
+  }//This closes pancake tag
+
+  .dessert {
+    height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }//This closes tablet media query
+    @media @phone {
+      margin-bottom: 10%;
+    }//This closes phone media query
+  }//This closes dessert
+
+  .sammich {
+    height: 30vh;
+    @media @tablet {
+      margin-bottom: 10%;
+    }//This closes tablet media query
+    @media @phone {
+      margin-bottom: 10%;
+    }//This closes phone media query
+  }//This closes sammich tag
+  .food1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+  .food4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      background:@red;
+      width: 100%;
+      color: @ivory;
+      text-align: center;
+      font-size: 2rem;
+      @media @tablet{
+        position: relative;
+        bottom: 9.8%;
+      }
+    }
+  }
+}//This closes recipe tag
